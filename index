@@ -1,5 +1,15 @@
  <!DOCTYPE html>
 
+<html>
+<head>
+   <meta http-equiv="origin-trial" content="TOKEN_GOES_HERE">
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+
+<body>
+
 <div id="result">ここに結果を表示します</div>
 
 <script>
@@ -15,3 +25,6 @@
     document.getElementById('result').innerHTML = data;
   });
   </script>
+  
+  </body>
+</html>
