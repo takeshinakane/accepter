@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+
+<div id="result">ここに結果を表示します</div>
+
+<script>
+ fetch('/api/data', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ data: 'example' })
+})
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('result').innerHTML = data;
+  });
+  </script>
